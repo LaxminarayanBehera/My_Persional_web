@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website - Laxminarayan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/420a2aeffa.js" crossorigin="anonymous"></script>
+</head>
+
+<!----------------Header------------------->
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/my_sig.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!--cross icon-->
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <!-- menu icon-->
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer ..</p>
+                <h1>Hi, I'm  <span>Laxminarayan</span><br>from India</h1>
+            </div>
+        </div>
+    </div>
+
+ <!-----------------About---------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/me.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"><span>About</span> Me</h1>
+                    <p>Hello! I'm Laxminarayan Behera pursuing MCA at Kalinga Institute Of Industrial Technology,
+                        Bhubaneswar. I have strong problem-solving skills and good knowledge about Object-oriented programming .
+                        I'm an intermediate in Python and have experience in Web development,
+                        Particularly with HTML, CSS & javascript and currently working on Java and Web developement
+                         I'm a tech guy with qualities that make my software development approach special everyday
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Core Java</span><br>Java Developer</li>
+                            <li><span>Web developement</span><br>HTML, CSS, Javascript</li>
+                            <li><span>SQL</span><br>Backend developement</li>
+                            <li><span>Git-Github</span><br>Version control Tolls</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Celebal Technologies</span><br>Data Engenering </li>
+                            <li><span>Salesforce</span><br>Salesforce Developer</li>
+                        
+                        </ul>
+                    </div>    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2024</span><br>MCA at KIIT University</li>
+                            <li><span>2019-1022</span><br>B.Sc in Physics at F.M. University</li>
+                            <li><span>2017-1019</span><br>Higher Secondary Education at F.M University</li>
+                            <li><span>2016-2017</span><br>High School at Saraswati Sisu Vidya Mandir</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------services-------------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"><span>My </span>Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>" I design affordable and effective websites that help small businesses thrive. "</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>software Development</h2>
+                    <p>" I design affordable and effective desktop application  that help small businesses. "</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------portfolio---------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"><span>My </span>Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/work-1.png">
+                    <div class="layer">
+                        <h3>Employee Management System</h3>
+                        <p>The Application is mainly design to manage the employee in any company</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work-2.png">
+                    <div class="layer">
+                        <h3>portfolio websit</h3>
+                        <p>The Application is mainly design to manage the employee in any company</p>
+                        <a href=""></i><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work-3.png">
+                    <div class="layer">
+                        <h3>Calculator application</h3>
+                        <p>The Application is mainly design to manage the employee in any company</p>
+                        <a href=""><i class="fa-solid fa-paperclip"></i></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-----------------------contact------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"><span>Contact </span>Me</h1>
+                    <p><i class="fa-solid fa-envelope-open"></i></i> laxminarayanbehera2002@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i> +91 6372303961</p>
+                    <p> <i class="fa-solid fa-map-location-dot"></i> Bhubaneswar, Odisha</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="image/Resume.pdf" download class="btn btn2"> <i class="fa-solid fa-download"></i> Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name " placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message"  cols="30" rows="10" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2"><i class="fa-regular fa-paper-plane"></i> Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2024 - Template designed & developed by <i class="fa-solid fa-heart-pulse"></i> Laxminarayan.</p>
+        </div>
+    </div>
+ 
+
+    <!---------------------------scroll to top ----------------->
+
+
+
+    <a class="go-to-top" href="#"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+
+
+    <!-------------------------javascript-------------------->
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+
+        var sidemenu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    
+</body>
+</html>
